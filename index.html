@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -26,7 +26,7 @@
 					<span class="navbar-toggler-icon"></span>
 				  </button><!--для адаптиву-->
 				
-				  <div class="collapse navbar-collapse" id="navbarNavDropdown"><!-- як опустити?-->
+				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav">
 					  <li class="nav-item">
 						<a class="nav-link" href="#">Главная</a>
@@ -65,44 +65,276 @@
 	</div>		
 	</header>
 	<div class="content">
+		<div class="baner">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="0">
-		  <ol class="carousel-indicators">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		  </ol>
-		  <div class="carousel-inner">
-			<div class="carousel-item active">
-			  <img class="d-block w-100" src="image/slider.png" alt="First slide">		
-					<div class="carousel-caption d-none d-md-block">
-						БЕЗОПАСНОСТЬ - это мы квалифицированный персонал one
-					</div>				
-			</div>
-			<div class="carousel-item">
-			  <img class="d-block w-100" src="image/slider.png" alt="Second slide">
-				<div class="carousel-caption d-none d-md-block">
-					БЕЗОПАСНОСТЬ - это мыквалифицированный персонал two
+			  <ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img class="d-block" src="image/slider.png" alt="First slide">		
+						<div class="carousel-caption">
+							<div>безопасность - это мы <span>квалифицированный персонал</span> </div>
+						</div>				
 				</div>
-			 </div>
-			<div class="carousel-item">
-			  <img class="d-block w-100" src="image/slider.png" alt="Third slide">
-				<div class="carousel-caption d-none d-md-block">
-				БЕЗОПАСНОСТЬ - это мы квалифицированный персонал	Three
+				<div class="carousel-item">
+				  <img class="d-block" src="image/slider.png" alt="Second slide">
+					<div class="carousel-caption">
+						<div>безопасность - это мы <span>квалифицированный персонал</span> </div>
+					</div>
+				 </div>
+				<div class="carousel-item">
+				  <img class="d-block" src="image/slider.png" alt="Third slide">
+					<div class="carousel-caption">
+					<div>безопасность - это мы <span>квалифицированный персонал</span> </div>
+				  </div>
+				</div>
 			  </div>
+			   <div class="container">
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+				</div>
 			</div>
-		  </div>
-		   <div class="container">
-			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			  </a>
+		</div>
+
+		<div class="forms_send">
+			<div class="container">
+				<div class="row">
+					<form>
+					  <div class="form-row">
+						<div class="col-md-2 send_request">
+							<div class="email_before">
+							Оставьте <span>заявку</span>
+							</div>
+						</div>
+						<div class="col-md-3">
+						  <input type="text" class="form-control"  placeholder="Имя" value="">
+						</div>
+						<div class="col-md-3">
+						  <input type="text" class="form-control" placeholder="Номере телефона" value="">
+						</div>
+						<div class="col-md-2">
+						<select class="form-control">	 
+						  <option value="1">Юр.лицо</option>
+						  <option value="2">Юиз.лицо</option>
+						</select>
+						</div>
+						<div class="col-md-2">
+						<a href="#"><input type="submit" class="form-control  button_form"></a>	
+						</div>
+					  </div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="title">
+					<div class="bland">	
+						Услуги<span>Компании</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 company_services"><!--мав би бути ще ров*-->
+					<img src="image/physical_food.png">
+					<div class="company_services_item">
+						<div class="h2">Физическая охрана</div>
+						Физическая охрана — основное напраление деятельности  «Бастион». Сотрудники нашей организации ...  
+					</div>
+				</div>
+				<div class="col-md-4 company_services">
+					<img src="image/mass activities.png">
+					<div class="company_services_item">
+						<div class="h2">массовые мероприятия</div>
+						Физическая охрана — основное напраление деятельности  «Бастион». Сотрудники нашей организации ...  
+					</div>
+				</div>
+				<div class="col-md-4 company_services">
+					<img src="image/security-camera.png">
+					<div class="company_services_item">
+						<div class="h2">тсо</div>
+						Физическая охрана — основное напраление деятельности  «Бастион». Сотрудники нашей организации ... 
+					</div>
+				</div>	
+				<div class="col-md-4 company_services">
+					<div class="img">
+						<img src="image/bodyguard.png">
+					</div>
+					<div class="company_services_item">
+						<div class="h2">Личная охрана</div>
+						Физическая охрана — основное напраление деятельности  «Бастион». Сотрудники нашей организации ...  
+					</div>
+				</div>
+				<div class="col-md-4 company_services">
+					<img src="image/security audit.png">
+					<div class="company_services_item">
+						<div class="h2">Аудит безопасности</div>
+						Физическая охрана — основное напраление деятельности  «Бастион». Сотрудники нашей организации ... 
+					</div>
+				</div>
+				<div class="col-md-4 company_services">
+					<div class="img">
+						<img src="image/additional.png">
+					</div>
+					<div class="company_services_item">
+						<div class="h2">Доп.услуги</div>
+						Физическая охрана — основное напраление деятельности  «Бастион». Сотрудники нашей организации ... 
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="about_company">
+			<div class="container">
+				<div class="row">
+				<div class="bland_white_company"></div>
+					Бастион - холдинг предприятий, оказывающий охранные услуги во всех федеральных охругах.
+					Опыт и репутация, приобретенные за годы существования, позволяют назвать БАСТИОН гарантом качества и безопасности		<!--як вирівняти-->
+					<a href="#" class="about_company_button"><input type="submit" class="form-control  button_form" value="О Компании"><a>
+				</div>			
+			</div>
+		</div>
+	
+		<div class="container client_slider">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="title">
+						<div class="bland">
+							Объекты под<span>охраной</span>
+						</div>
+					</div>
+					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel"  data-interval="0">
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+						  <img class="d-block w-100" src="image/client_slider.png" alt="First slide">
+							<div class="carousel-caption d-none d-md-block">
+						Торговые  и бизнес центры
+							</div>	
+						</div>
+						<div class="carousel-item">
+						  <img class="d-block w-100" src="image/client_slider.png" alt="Second slide">
+							<div class="carousel-caption d-none d-md-block">
+						Торговые  и бизнес центры
+							</div>	
+						</div>
+						<div class="carousel-item">
+						  <img class="d-block w-100" src="image/client_slider.png" alt="Third slide">
+							<div class="carousel-caption d-none d-md-block">
+							Торговые  и бизнес центры
+							</div>	
+						</div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					  </a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="title">
+						<div class="bland">	
+							Конкурентные <span>преимущества</span>
+						</div>
+					</div>
+					<div class="competitive_avantages">
+						<div class="avantages">
+						  <a class="dropdown-item" href="#">Надежность</a>
+						  <a class="dropdown-item" href="#">Оперативность</a>
+						  <a class="dropdown-item" href="#">Робота во всех округах РФ</a>
+						  <a class="dropdown-item" href="#"> Запускная команда</a>
+						</div>
+						<div class="avantages">
+							<a class="dropdown-item" href="#">Индивидуальный подход</a>
+							<a class="dropdown-item" href="#">Комплекс услуг</a>
+							<a href="#" class="client_button"><input type="submit" class="form-control  button_form" value="Клиенты"></a><!--як вирівняти-->
+							
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="forms_send mailing">
+			<div class="container">
+				<div class="row">
+					<form>
+					  <div class="form-row">
+						<div class="col-md-2 send_request">
+							<div class="bland_white">	
+								подпишитесь на<span> рассылку</span>
+							</div>
+						</div>
+						<div class="col-md-3">
+						  <input type="text" class="form-control"  placeholder="Ваш E-mail" value="">
+						</div>
+						<div class="col-md-3">
+						  <input type="text" class="form-control" placeholder="Имя / название организации" value="">
+						</div>
+						<div class="col-md-2">
+						<select class="form-control">	 
+						  <option value="1">Юр.лицо</option>
+						  <option value="2">Физ.лицо</option>
+						</select>
+						</div>
+						<div class="col-md-2">
+						<a href="#"><input type="submit" class="form-control  button_form" value="подписаться"></a>	
+						</div>
+					  </div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
+	<footer class="container">
+		<div class="row">
+		
+			<div class="col-md-3 copy">
+				<a href="#"  class="logo_footer"><img src="image/logo.png" alt=""></a>
+				<div class="copyright">2018 © Все права защищены.</div>
+			</div>
+			<div class="col-md-4 footer_menu">
+				<div class="title">меню</div>
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#">География</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 contacts">
+						<div class="title">свяжитесь с нами</div>
+					<div>Телефон: <span>8 (8442) 598-985</span></div>
+					<div>Email: <span>info@bastionvolga.com</span></div>
+					<div>Адрес: <span>107143, г. Москва,</span></div>
+					<div><span>ул. Открытое шоссе, д.15, стр.1</span></div>
+			</div>
+			<div class="col-md-2 footer_menu ">
+					<div class="title">соц. сети </div>
+				<div class="social">
+					<a href="#" class="facebook"></a>
+					<a href="#" class="twitter"></a>
+					<a href="#"	class="in"></a>
+					<a href="#"	class="goo"></a>
+				</div>
+			</div>
+		</div>	
+	</footer>
 		
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

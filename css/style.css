@@ -1,3 +1,9 @@
+*{
+	font-family: "Open Sans";
+	list-style-type: none;
+
+}
+
 .logo{
 	display:block;
 	padding:12px 0;
@@ -60,6 +66,13 @@ header .phone{
 	display: flex;
 	align-items: center;
 }
+
+.email_icon{
+	display:inline-block;
+}
+[class^="email_icon"]:hover{
+	transform: scale(1.4, 1.4);
+}
 .navbar-light .navbar-nav .nav-link{
 	padding:25px;
 	color:#737475;
@@ -93,6 +106,9 @@ header .phone{
 .dropdown:hover .dropdown-menu{
 	display:block;	
 }
+.dropdown:hover .nav-link{
+color:#fff;
+}
 .carousel-indicators li{
 	width: 14px;
 	height: 13px;
@@ -100,7 +116,312 @@ header .phone{
 	border-radius:10px;
 	background-color: rgba(255,255,255,0);
 }
+
 .carousel-indicators .active{
 	border: 2px solid #af091a;
 	background-color: rgba(255,255,255,0);
+}
+.baner .carousel-caption{
+	display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+	font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.carousel-caption span{
+	display:block;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 1.9px;
+}
+
+
+
+.baner .carousel-control-next-icon {
+	background-image: url(../image/baner_slider_next.png);
+	width: 59px;
+	height: 59px;
+	right: 50px;
+	
+}
+.baner .carousel-control-next {
+	right: 50px;
+	
+}
+.baner .carousel-control-prev-icon {
+	background-image: url(../image/baner_slider_prev.png);
+	width: 59px;
+	height: 59px;
+}
+.baner .carousel-control-prev {
+	left: 50px;
+	
+}
+.forms_send{
+	background-color: #9fa7aa;
+	padding:80px 0;
+	position: relative;
+}
+.email_before:before{/*як зробити щоб при наведенні ставала більша іконка*/
+    content: '';
+	width: 28px;
+	height: 22px;
+    position: absolute;
+    display: inline-block;
+	background-image: url(../image/icon_email_white.png);
+    background-repeat: no-repeat;
+	bottom: 80px;
+}
+.send_request{
+	color: #af091a;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 31px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+ .send_request span{
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 800;
+	letter-spacing: 2.5px;
+}
+.form-control {
+    display: block;
+    height: 55px;
+	
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 0px;
+    border-radius: 0;
+}
+
+.button_form{
+	display: block;
+    width: 200px;
+    height: 55px;
+	background-color:#af091a!important;
+	color: #ffffff!important;
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 1.35px; 
+}
+
+.title{
+	color: #556b72;
+	font-weight: 400;
+	line-height: 31px;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 0.45px;
+	margin:50px 0;
+	position:relative;
+}
+
+[class^="bland"]:before{
+    content: '';
+    width: 21px;
+    height: 2px;
+    position: absolute;
+    display: inline-block;
+    background-color: #af091a;
+    background-repeat: no-repeat;
+    bottom: 65px;
+}
+.bland_white:before{
+    background-color: #fff;
+    bottom: 75px;
+}
+.bland_white_company:before{
+    background-color: #fff;
+    top: 25px;
+    left: 50%;
+}
+ .title span{
+	 display:block;
+	font-weight: 800;
+	font-size: 30px;
+	letter-spacing: -0.75px;
+	margin-bottom:0;
+}
+.company_services{
+	display:flex;
+	align-items:flex-start;
+	margin-bottom:75px;
+}
+.company_services_item{
+	padding-left:20px;
+	color: #a0a9b6;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.14px;
+}
+.company_services_item .h2{
+	color: #556b72;
+	font-size: 16px;
+	font-weight:800;
+	line-height: 31px;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+}
+.company_services .img{
+	height:66px;
+	width:66px!important;/*не діє*/
+}
+
+.about_company{
+	background-color: #9fa7aa;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align:center;
+	padding-top: 35px;
+	position:relative;
+
+}
+.about_company_button{
+	margin:25px auto;
+
+}
+.client_slider .carousel-caption{
+	position: absolute;
+    bottom: 50%;
+    transform: translate(0, 50%);
+	font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+.client_slider .carousel-control-prev-icon {
+	background-image: url(../image/slider_prev.png);
+	width: 8px;
+	height: 14px;
+}
+.client_slider .carousel-control-next-icon {
+	background-image: url(../image/slider_next.png);
+	width: 8px;
+	height: 14px;
+}
+.client_slider .slide{
+	width: 451px;
+	height: 320px;
+	margin-bottom:60px;
+}
+.competitive_avantages{
+	margin-top:130px;
+	display:flex;
+	justify-content: space-between;
+}
+.competitive_avantages .dropdown-item{
+	margin-left:-15px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 36px;
+	letter-spacing: 0.14px;
+	width: 300px;
+}
+.client_button .button_form{
+	margin-top:25px;
+}
+.mailing .send_request{
+	font-size: 15px;
+	letter-spacing: 0.42px;
+	font-weight: 400;
+	line-height: 31px;
+	text-transform: uppercase;
+}
+.mailing .send_request span{
+	font-size: 30px;
+	letter-spacing: -0.75px;
+	color: #ffffff;
+	font-weight:800;
+	letter-spacing: -0.75px;
+}
+
+.logo_footer{
+	display:block;
+	margin:50px auto 30px;
+	text-align: center;
+}
+footer{
+	height:355px;
+}
+footer ul li a{
+	color: #9fa7aa!important;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+}
+.footer_menu ul{
+	padding:0;
+}
+.footer_menu ul li{
+	width: 50%;
+    float: left;
+}
+.footer_menu ul li:last-child{
+	float:none;
+}
+footer .title{
+	color: #6d6e72;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 27px;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	margin:100px 0 20px 0;
+	
+}
+.copyright{
+	color: #9fa7aa;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+}
+footer .contacts{
+	line-height: 30px;
+	color: #6d6e72;
+	font-size: 14px;
+	font-weight: 800;
+}
+footer .contacts span{
+	color: #9fa7aa;
+	font-size: 14px;
+	font-weight: 400;
+}
+.soc{
+	display:block;
+}
+.social{
+	display:flex;
+	width: 168px;
+	height: 23px;
+	align-items:flex-start;
+}
+.social a{
+	width:42px;
+	height: 23px;
+	background-image: url(../image/social.png);
+	background-repeat:no-repeat;
+}
+.facebook{
+	background-position:0;
+}
+.twitter{
+	background-position:-42px 0;
+}
+.in{
+	background-position:-92px 0;
+}
+.goo{
+	background-position:-146px 0;
 }
